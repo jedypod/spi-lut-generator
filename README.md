@@ -13,3 +13,10 @@ The workflow is to first create a null image using the `lutcreate-nullimage1d` t
 
 ## spi3d
 The workflow is the same for an spi3d lut except that instead of a ramp you will be creating a more complex lattice to apply the color transformation to. First use the `lutcreate-nullimage3d` tool to create a source image. Then transform this image using your software of choice. Then use the `lutcreate-spi3d` tool to convert your processed exr into an spi3d lut.
+
+## Walkthrough with Pictures
+![01_lutcreate_nullimage1d](images/01_lutcreate_nullimage1d.png)
+![02_colortransform_off](images/02_colortransform_off.png)
+![03_colortransform_on](images/03_colortransform_on.png)
+![04_generate_spi1d](images/04_generate_spi1d.png)
+![05_apply_with_ocio_filetransform](images/05_apply_with_ocio_filetransform.png)

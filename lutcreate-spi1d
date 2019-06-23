@@ -53,11 +53,14 @@ def generate(resolution=4096, min_value=-0.358400, max_value=1.468000):
             os.makedirs(output)
     else:
         output = os.getcwd()
-    if args.min:
+    if args.min is not None:
+        # print("Setting args.min to {0}".format(args.min))
         min_value = args.min
-    if args.max:
+    if args.max is not None:
+        # print("Setting args.max to {0}".format(args.max))
         max_value = args.max
-    if args.resolution:
+    if args.resolution is not None:
+        # print("Setting args.resolution to {0}".format(args.resolution))
         resolution = args.resolution
 
     generate_1d_LUT_from_image(
